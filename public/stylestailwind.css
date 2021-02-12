@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sr-only{
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px 1px 1px 1px);
+       }
+       
+       .transition{
+        transition: ease .2s;
+       }
+
+       .rotate-45 {
+        transform: rotate(45deg);
+      }
+      .-rotate-45 {
+        transform: rotate(-45deg);
+      }
+
+      .snap-x {
+        scroll-snap-type: x mandatory;
+        
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+    .snap-start {
+      scroll-snap-align: start;
+    }
